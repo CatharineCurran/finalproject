@@ -33,7 +33,8 @@ rjs js -->
 	<div>
 	<center>
 	  <h2>
-	    <div id="myLife">   <!--Reference to JavaScript below-->
+	    <div id="myLife">
+
 	0
 	     </div>
 	  </h2>
@@ -82,7 +83,7 @@ Vitamin B-12    5%      Magnesium       6%
 	<div>
         <center>
 
-        <a class="button button-positive" onclick="incDec('+172')"> <!--Button incrementing "CurrentLife"-->
+        <a class="button button-positive" onclick="incDec('+172')"> 
                 +172
         </a>
         </center>
@@ -573,8 +574,9 @@ Potassium       275.7mg
 </ion-pane>
 	<script type="text/javascript">  <!--JavaScript-->
 
+
         function  incDec(plusMinus) {
-	   console.log("Now in the function");                            <!--JavaScript to Increment "CurrentLIfe" via buttons provided-->
+	   console.log("Now in the function");                            
 	   var plusMinus = parseInt(plusMinus);
 	   var currentLife = parseInt(document.getElementById("myLife").innerHTML)+plusMinus;     
 	     document.getElementById("myLife").innerHTML = currentLife;                    
@@ -582,7 +584,7 @@ Potassium       275.7mg
  	}
 
 	function reset() {
-      		document.getElementById("myCalories").innerHTML = 0; <!--JavaScript to Reset "CurrentLife" to 0-->
+      		document.getElementById("myLife").innerHTML = 0; 
 	}
 
 
