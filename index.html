@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -25,7 +26,7 @@ rjs js -->
   </head>
   <body ng-app="starter">
 
-    <ion-pane>
+    <ion-pane> <!--Header Bar-->
       <ion-header-bar class="bar-calm">
         <h1 class="title">Calorific</h1>
       </ion-header-bar>
@@ -97,7 +98,7 @@ Vitamin B-12    5%      Magnesium       6%
 <p>Calories:77</p>
 </div>
 <div class="item item-body">
-<img src="http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/9/24/1411574454561/03085543-87de-47ab-a4eb-58e7e39d022e-620x372.jpeg">
+<img src="http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/9/24/1411574454561/03085543-87de-47ab-a4eb-58e7e39d022e-620x372.jpeg" width="50%">
 <p>
 Nutrition Facts
 Potato
@@ -425,7 +426,7 @@ Nutrition Values are based on USDA Nutrient Database SR18
 <div>
                                 <center>
 <a class="button button-positive" onclick="incDec('+364')">
-                                +364
+                                +364  <!--Increments Calories by 364-->
                                 </a>
                                 </center>
                                 </div>
@@ -489,7 +490,7 @@ Vitamin B-12    0%      Magnesium       5%
 </div>
 
 <div class="item item-body">
-<img src="http://www.technobuffalo.com/wp-content/uploads/2014/03/whopper.jpg" width="50%">
+<img src="http://www.technobuffalo.com/wp-content/uploads/2014/03/whopper.jpg" width="50%"> <!--Image-->
 <p>
 
 Nutrition Facts
@@ -566,24 +567,28 @@ Potassium       275.7mg
                                 </div>
 
 
-<div id="myCalories">
+
         <center><a class="button button-energized" onclick="reset()">Reset</a></center>
   </div>
 
 </ion-content>
+
+<div class="bar bar-footer bar-calm">  <!--Footer Bar-->
+ <h1 class="title">Calorific</h1>
+
 </ion-pane>
 	<script type="text/javascript">  <!--JavaScript-->
 
 
         function  incDec(plusMinus) {
 	   console.log("Now in the function");                            
-	   var plusMinus = parseInt(plusMinus);
+	   var plusMinus = parseInt(plusMinus);   <!--JavaScript to Increment MyLife-->
 	   var currentLife = parseInt(document.getElementById("myLife").innerHTML)+plusMinus;     
 	     document.getElementById("myLife").innerHTML = currentLife;                    
 
  	}
 
-	function reset() {
+	function reset() {						<!--JavaScript to Reset Calories to 0-->
       		document.getElementById("myLife").innerHTML = 0; 
 	}
 
